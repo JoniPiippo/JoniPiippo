@@ -56,26 +56,32 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
-    transition: all 0.3s ease;
+    background-color: #d3c203;
+    transition: all 0.6s ease;
 }
 
 .link a:hover::after {
     width: 70%;
 }
+.nav-link:hover{
+    color: rgb(81, 89, 201);
+}
+.nav-link:active, .nav-link:focus{
+    color: rgb(81, 89, 201);
+}
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 0.9rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #1d4ed8;
-    border-radius: 5px;
+    background-color: #d3c203;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
 }
 
 .btn:hover {
-    background-color: #1e40af;
+    color: #fff;
+    background-color: rgb(0, 13, 201);
 }
 
 .container {
@@ -86,7 +92,7 @@ nav {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #1d4ed8;
+    box-shadow: 0 0 1000px 50px #d3c203;
     z-index: -100;
 }
 
@@ -137,7 +143,7 @@ header .image::before {
     font-size: 38rem;
     font-weight: 400;
     line-height: 20rem;
-    color: #1d4ed8;
+    color: #d3c203;
     opacity: 0.2;
     z-index: -100;
 }
@@ -172,12 +178,12 @@ section .header {
 
 .features .card:hover {
     background-color: #323232;
-    border-color: #fff;
+    border-color: rgb(0, 13, 201);
 }
 
 .features .card span {
     display: inline-block;
-    background-color: #1e40af;
+    background-color: #d3c203;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -203,7 +209,7 @@ section .header {
 }
 
 .features .card a:hover {
-    color: #1e40af;
+    color: #d3c203;
 }
 
 .sub-header {
@@ -232,7 +238,7 @@ section .header {
 
 .pricing .card:hover {
     background-color: #323232;
-    border-color: #fff;
+    border-color: rgb(0, 13, 201);
 }
 
 .pricing .card .content {
@@ -274,8 +280,8 @@ section .header {
 }
 
 .pricing .card button:hover {
-    background-color: #1e40af;
-    border-color: #1e40af;
+    background-color: #d3c203;
+    border-color: #d3c203;
 }
 
 footer {
@@ -312,8 +318,8 @@ footer .column .socials a {
 
 footer .column .socials a:hover {
     color: #fff;
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
+    background-color: #d3c203;
+    border-color: #d3c203;
 }
 
 footer .column h4 {
@@ -331,7 +337,7 @@ footer .column>a {
 }
 
 footer .column>a:hover {
-    color: #1d4ed8;
+    color: #d3c203;
 }
 
 .copyright {
