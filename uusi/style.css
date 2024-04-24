@@ -63,10 +63,13 @@ nav {
 .link a:hover::after {
     width: 70%;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(81, 89, 201);
 }
-.nav-link:active, .nav-link:focus{
+
+.nav-link:active,
+.nav-link:focus {
     color: rgb(81, 89, 201);
 }
 
@@ -77,6 +80,10 @@ nav {
     background-color: #d3c203;
     cursor: pointer;
     transition: all 0.6s ease;
+}
+
+form .btn {
+    padding: 0.5rem 2rem;
 }
 
 .btn:hover {
@@ -94,6 +101,21 @@ nav {
     position: absolute;
     box-shadow: 0 0 1000px 50px #d3c203;
     z-index: -100;
+}
+
+.blurr {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #d3c203;
+    right: 0;
+    z-index: -100;
+}
+
+nav h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 header {
@@ -161,14 +183,25 @@ section .header {
     font-weight: 600;
 }
 
-.features {
+form label {
+    color: black;
+}
+
+.features,
+.featuresy {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.features .card {
+.featuresy {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.features .card,
+.featuresy .cardy {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -176,12 +209,14 @@ section .header {
     transition: all 0.3s ease;
 }
 
-.features .card:hover {
+.features .card:hover,
+.featuresy .cardy:hover {
     background-color: #323232;
     border-color: rgb(0, 13, 201);
 }
 
-.features .card span {
+.features .card span,
+.featuresy .cardy span {
     display: inline-block;
     background-color: #d3c203;
     padding: 2px 9px;
@@ -191,24 +226,40 @@ section .header {
     border-radius: 5px;
 }
 
-.features .card h4 {
+.featuresy .cardy .info span {
+    display: inline-block;
+    background-color: rgb(0, 13, 201);
+    padding: 5px 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.features .card h4,
+.featuresy .cardy h4 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.features .card p {
+.features .card p,
+.featuresy .cardy p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.features .card a {
+.features .card a,
+.featuresy .cardy a {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.features .card a:hover {
+.features .card a:hover,
+.featuresy .cardy a:hover {
     color: #d3c203;
 }
 
@@ -273,22 +324,27 @@ section .header {
     margin-right: 0.3rem;
 }
 
-.pricing .card button {
+.pricing .card a {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
 }
 
-.pricing .card button:hover {
+.pricing .card a:hover {
     background-color: #d3c203;
     border-color: #d3c203;
+}
+
+.pricing .card .links a {
+    width: 50%;
 }
 
 footer {
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    justify-content: space-around;
+    gap: 1.5rem;
 }
 
 footer .column .logo {
@@ -340,6 +396,7 @@ footer .column>a:hover {
     color: #d3c203;
 }
 
+
 .copyright {
     max-width: 1200px;
     margin: auto;
@@ -372,6 +429,12 @@ footer .column>a:hover {
 
     footer {
         grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 780px){
+    .featuresy {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
