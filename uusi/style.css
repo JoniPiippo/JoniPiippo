@@ -99,7 +99,7 @@ form .btn {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #d3c203;
+    box-shadow: 0 0 1000px 75px #d3c203;
     z-index: -100;
 }
 
@@ -200,11 +200,16 @@ form label {
 }
 
 .features,
-.featuresy {
+.featuresy,
+.featuress {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
+
+.featuress{
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .featuresy {
@@ -213,7 +218,8 @@ form label {
 }
 
 .features .card,
-.featuresy .cardy {
+.featuresy .cardy,
+.featuress .card{
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -222,13 +228,15 @@ form label {
 }
 
 .features .card:hover,
-.featuresy .cardy:hover {
+.featuresy .cardy:hover,
+.featuress .card:hover{
     background-color: #323232;
     border-color: rgb(0, 13, 201);
 }
 
 .features .card span,
-.featuresy .cardy span {
+.featuresy .cardy span,
+.featuress .card span{
     display: inline-block;
     background-color: #d3c203;
     padding: 2px 9px;
@@ -251,7 +259,8 @@ form label {
 }
 
 .features .card h4,
-.featuresy .cardy h4 {
+.featuresy .cardy h4,
+.featuress .card h4{
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
@@ -259,19 +268,22 @@ form label {
 }
 
 .features .card p,
-.featuresy .cardy p {
+.featuresy .cardy p,
+.featuress .card p{
     color: #ccc;
     margin-bottom: 1rem;
 }
 
 .features .card a,
-.featuresy .cardy a {
+.featuresy .cardy a,
+.featuress .card a{
     color: #fff;
     transition: all 0.3s ease;
 }
 
 .features .card a:hover,
-.featuresy .cardy a:hover {
+.featuresy .cardy a:hover,
+.featuress .card a:hover {
     color: #d3c203;
 }
 
@@ -431,7 +443,7 @@ footer .column>a:hover {
         grid-area: 1/1/2/2;
     }
 
-    .features {
+    .features, .featuress {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -455,7 +467,7 @@ footer .column>a:hover {
         display: none;
     }
 
-    .features {
+    .features, .featuress {
         grid-template-columns: repeat(1, 1fr);
     }
 
