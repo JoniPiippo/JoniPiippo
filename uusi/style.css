@@ -110,6 +110,12 @@ form .btn {
     z-index: -100;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
 nav h2 {
     margin-bottom: 1rem;
     color: #fff;
@@ -185,6 +191,12 @@ section .header {
 
 form label {
     color: black;
+}
+
+.features a{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .features,
