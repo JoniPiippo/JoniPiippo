@@ -114,7 +114,7 @@ form .btn {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
+}
 
 nav h2 {
     margin-bottom: 1rem;
@@ -193,7 +193,7 @@ form label {
     color: black;
 }
 
-.features a{
+.features a {
     position: absolute;
     bottom: 0;
     margin-bottom: 2rem;
@@ -208,7 +208,7 @@ form label {
     gap: 2rem;
 }
 
-.featuress{
+.featuress {
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -219,7 +219,7 @@ form label {
 
 .features .card,
 .featuresy .cardy,
-.featuress .card{
+.featuress .card {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -229,14 +229,14 @@ form label {
 
 .features .card:hover,
 .featuresy .cardy:hover,
-.featuress .card:hover{
+.featuress .card:hover {
     background-color: #323232;
     border-color: rgb(0, 13, 201);
 }
 
 .features .card span,
 .featuresy .cardy span,
-.featuress .card span{
+.featuress .card span {
     display: inline-block;
     background-color: #d3c203;
     padding: 2px 9px;
@@ -260,7 +260,7 @@ form label {
 
 .features .card h4,
 .featuresy .cardy h4,
-.featuress .card h4{
+.featuress .card h4 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
@@ -269,14 +269,14 @@ form label {
 
 .features .card p,
 .featuresy .cardy p,
-.featuress .card p{
+.featuress .card p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
 .features .card a,
 .featuresy .cardy a,
-.featuress .card a{
+.featuress .card a {
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -363,6 +363,77 @@ form label {
     width: 50%;
 }
 
+.resume .section-title h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d3c203;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #d3c203;
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #d3c203;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item p {
+    color: #ccc;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #ccc;
+    border: 2px solid #d3c203;
+}
+
 footer {
     position: relative;
     display: grid;
@@ -443,7 +514,8 @@ footer .column>a:hover {
         grid-area: 1/1/2/2;
     }
 
-    .features, .featuress {
+    .features,
+    .featuress {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -456,7 +528,7 @@ footer .column>a:hover {
     }
 }
 
-@media (width < 780px){
+@media (width < 780px) {
     .featuresy {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -467,7 +539,8 @@ footer .column>a:hover {
         display: none;
     }
 
-    .features, .featuress {
+    .features,
+    .featuress {
         grid-template-columns: repeat(1, 1fr);
     }
 
