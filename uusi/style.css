@@ -68,11 +68,6 @@ nav {
     color: rgb(81, 89, 201);
 }
 
-.nav-link:active,
-.nav-link:focus {
-    color: rgb(81, 89, 201);
-}
-
 .btn {
     padding: 0.9rem 2rem;
     font-size: 1rem;
