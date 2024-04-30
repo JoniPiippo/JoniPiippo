@@ -19,7 +19,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #18181B;
+    background: linear-gradient(#18181B, #080820);
 }
 
 nav {
@@ -43,10 +43,28 @@ nav {
     gap: 3rem;
 }
 
+.dropdown-menu{
+    background-color: transparent;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+.droplink a{
+    width: 50px;
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #ffffff;
+}
+
+.dropdown-menu a:hover{
+    background-color: transparent;
+}
+
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 .link a::after {
@@ -66,6 +84,12 @@ nav {
 
 .nav-link:hover {
     color: rgb(81, 89, 201);
+}
+
+nav button{
+    background-color: transparent;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .btn {
