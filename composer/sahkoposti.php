@@ -32,10 +32,9 @@ if (!empty($_POST)) {
 
     // send the message
     if (!$mail->send()) {
-        echo 'email ei lähtenyt.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        echo 'Email ei lähtenyt.';
     } else {
-        header('location: ../fi/contactfi.html');
+        echo 'Sähköposti on lähetetty, KIITOS!';
     }
 }
 ?>
