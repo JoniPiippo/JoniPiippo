@@ -35,7 +35,7 @@ if (!empty($_POST)) {
         echo 'email ei lähtenyt.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
-        header('location: ../en/contact.html');
+
     }
 }
 ?>

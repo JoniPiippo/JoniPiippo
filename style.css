@@ -452,6 +452,18 @@ form label {
     background: #ccc;
     border: 2px solid #d3c203;
 }
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Success message style */
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 footer {
     position: relative;
