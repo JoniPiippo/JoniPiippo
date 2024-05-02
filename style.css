@@ -309,11 +309,13 @@ form label {
 .error-message {
     margin-top: 1rem;
     color: red;
+    font-size: large;
 }
 
 .success-message {
     margin-top: 1rem;
     color: green;
+    font-size: large;
 }
 
 .pricing {
@@ -454,19 +456,6 @@ form label {
     top: 0;
     background: #ccc;
     border: 2px solid #d3c203;
-}
-
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Success message style */
-.success-message {
-    color: green;
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 footer {

@@ -59,7 +59,7 @@
                     <span><i class="fa-solid fa-at"></i></span>
                 </div>
                 <h4>Ota yhteyttä sähköpostin kautta</h4>
-                <form class="mt-4" action="../composer/sahkoposti.php" method="post">
+                <form id="emailForm" class="mt-4" method="post">
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Sähköposti" name="email" required>
                     </div>
@@ -73,6 +73,7 @@
                     </div>
 
                     <button type="submit" class="btn">Lähetä</button>
+                    <div id="response"></div>
                 </form>
             </div>
         </div>
@@ -116,8 +117,12 @@
         Copyright © 2024 Joni Piippo. All Rights Reserved.
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../Javscript/script.js"></script>
+    <script src="../Javscript/sahkoposti.js"></script>
 </body>
 
 </html>
