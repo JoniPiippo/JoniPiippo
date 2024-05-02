@@ -32,10 +32,9 @@ if (!empty($_POST)) {
 
     // send the message
     if (!$mail->send()) {
-        echo 'email ei lähtenyt.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        echo 'Email was not send please try again later.';
     } else {
-
+        echo 'Your email has been sent! Thank you!';
     }
 }
 ?>

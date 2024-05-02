@@ -43,21 +43,21 @@ nav {
     gap: 3rem;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: transparent;
     list-style: none;
     align-items: center;
     gap: 3rem;
 }
 
-.droplink a{
+.droplink a {
     width: 50px;
     position: relative;
     padding-bottom: 0.75rem;
     color: #ffffff;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background-color: transparent;
 }
 
@@ -86,7 +86,7 @@ nav {
     color: rgb(81, 89, 201);
 }
 
-nav button{
+nav button {
     background-color: transparent;
     color: #ffffff;
     margin-bottom: 10px;
@@ -274,7 +274,7 @@ form label {
     margin-right: 1.5rem;
     font-size: 1rem;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
 .features .card h4,
@@ -306,11 +306,14 @@ form label {
     color: #d3c203;
 }
 
-.sub-header {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    color: #ccc;
+.error-message {
+    margin-top: 1rem;
+    color: red;
+}
+
+.success-message {
+    margin-top: 1rem;
+    color: green;
 }
 
 .pricing {
@@ -452,6 +455,7 @@ form label {
     background: #ccc;
     border: 2px solid #d3c203;
 }
+
 .error-message {
     color: red;
     font-size: 14px;

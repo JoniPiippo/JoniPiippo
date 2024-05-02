@@ -4,12 +4,18 @@ $(document).ready(function () {
         var formData = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: 'send_email.php', // PHP script URL
+            url: '../composer/send_email.php',
             data: formData,
             success: function (response) {
-                // Update HTML based on response
-                $('#response').html(response);
-                $('#response').addClass('success-message');
+                if (response.startsWith('Your')) {
+                    $('#response').html(response);
+                    $('#response').addClass('success-message');
+                    $('#emailForm')[0].reset();
+                }
+                else {
+                    $('#response').html('An error occurred. Please try again later.');
+                    $('#response').addClass('error-message');
+                }
             },
             error: function (xhr, status, error) {
                 console.error(xhr.responseText);
