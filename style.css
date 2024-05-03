@@ -526,7 +526,7 @@ footer .column>a:hover {
 }
 
 @media (width < 900px) {
-    .nav-links {
+    .link {
         display: none;
     }
 
