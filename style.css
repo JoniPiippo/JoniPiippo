@@ -92,6 +92,10 @@ nav button {
     margin-bottom: 10px;
 }
 
+.subject2{
+    display: none;
+}
+
 .btn {
     padding: 0.9rem 2rem;
     font-size: 1rem;
@@ -528,6 +532,14 @@ footer .column>a:hover {
 @media (width < 900px) {
     .link {
         display: none;
+    }
+
+    .subject{
+        display: none;
+    }
+
+    .subject2{
+        display: block;
     }
 
     header {
