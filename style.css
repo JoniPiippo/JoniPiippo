@@ -92,7 +92,7 @@ nav button {
     margin-bottom: 10px;
 }
 
-.subject2{
+.subject2 {
     display: none;
 }
 
@@ -100,7 +100,7 @@ nav button {
     padding: 0.9rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #d3c203;
+    background-color: #827703;
     cursor: pointer;
     transition: all 0.6s ease;
 }
@@ -273,9 +273,9 @@ form label {
     border-radius: 100%;
 }
 
-.features .card h4,
-.featuresy .cardy h4,
-.featuress .card h4 {
+.features .card h3,
+.featuresy .cardy h3,
+.featuress .card h3 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
@@ -341,14 +341,14 @@ form label {
     margin-bottom: 2rem;
 }
 
-.pricing .card h4 {
+.pricing .card h3 {
     margin-bottom: 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.pricing .card h3 {
+.pricing .card h4 {
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -526,11 +526,11 @@ footer .column>a:hover {
         display: none;
     }
 
-    .subject{
+    .subject {
         display: none;
     }
 
-    .subject2{
+    .subject2 {
         display: block;
     }
 
@@ -563,7 +563,7 @@ footer .column>a:hover {
 }
 
 @media (width < 600px) {
-    .contact{
+    .contact {
         flex-direction: column;
         justify-content: center;
     }
