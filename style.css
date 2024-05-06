@@ -135,12 +135,10 @@ form .btn {
 
 .center {
     margin: auto;
-    width: 50%;
     padding: 10px;
 }
 
 nav h2 {
-    margin-bottom: 1rem;
     color: #fff;
     text-align: center;
     font-size: 2.5rem;
@@ -214,12 +212,6 @@ section .header {
 
 form label {
     color: black;
-}
-
-.features a {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 2rem;
 }
 
 .features,
@@ -300,14 +292,14 @@ form label {
 .features .card a,
 .featuresy .cardy a,
 .featuress .card a {
-    color: #fff;
+    color: #d3c203;
     transition: all 0.3s ease;
 }
 
 .features .card a:hover,
 .featuresy .cardy a:hover,
 .featuress .card a:hover {
-    color: #d3c203;
+    color: #000dc9;
 }
 
 .error-message {
@@ -341,7 +333,7 @@ form label {
 
 .pricing .card:hover {
     background-color: #323232;
-    border-color: rgb(0, 13, 201);
+    border-color: #000dc9;
 }
 
 .pricing .card .content {
@@ -396,13 +388,13 @@ form label {
     color: #fff;
     text-align: center;
     font-size: 2.25rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 2rem;
     margin-bottom: 20px;
     color: #d3c203;
 }
@@ -571,6 +563,11 @@ footer .column>a:hover {
 }
 
 @media (width < 600px) {
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+    }
+
     header .image::before {
         display: none;
     }
@@ -585,6 +582,7 @@ footer .column>a:hover {
     }
 
     footer {
-        grid-template-columns: 1fr 150px;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
     }
 }
