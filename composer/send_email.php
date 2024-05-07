@@ -8,8 +8,8 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = 'smtp.kaisanet.net';
 $mail->SMTPAuth = true;
-$mail->Username = 'JonPii06';
-$mail->Password = 'Jonz15!';
+$mail->Username = '';
+$mail->Password = '';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port = 465;
 
