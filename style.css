@@ -305,7 +305,7 @@ form label {
 .error-message {
     margin-top: 1rem;
     color: red;
-    font-size: large;
+    font-weight: 700;
 }
 
 .success-message {
