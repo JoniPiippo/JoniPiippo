@@ -34,7 +34,7 @@ if (!empty($_POST)) {
     if (!$mail->send()) {
         echo 'Email ei lähtenyt.';
     } else {
-        echo 'Sähköposti on lähetetty, KIITOS!';
+        echo 'Sähköpostisi on lähetetty, KIITOS!';
     }
 }
 ?>
